@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(89, 89, 237);
+    height: 70vh;
+    padding-top: 35px;
+
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.playerOptions {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.playerOptions button {
+    height: 50px;
+    width: 100px;
+}
+
+.pc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pcOptions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 150px;
+    margin-top: 40px;
+    border: 2px solid black;
+}
+
+
+.resultado {
+    display: grid;
+    width: 500px;
+    height: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+
+    grid-template-areas:
+        "player h1 pc"
+        "result result result";
+
+}
+
+.resultado h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: h1;
+    text-align: center;
+}
+
+.display {
+    grid-area: result;
+    text-align: center;
+    font-size: 40px;
+}
+
+.displayPlayer {
+    grid-area: player;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.displayPc {
+    grid-area: pc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.ganar {
+    color: green;
+}
+
+.perder {
+    color: red;
+}
