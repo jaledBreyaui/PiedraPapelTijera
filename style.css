@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Righteous', cursive;
 }
 
 
@@ -12,6 +13,7 @@
     background-color: rgb(89, 89, 237);
     height: 70vh;
     padding-top: 35px;
+    align-content: center;
 
 }
 
@@ -66,7 +68,7 @@
 
 }
 
-.resultado h1 {
+.resultado__uno {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,23 +85,31 @@
 .displayPlayer {
     grid-area: player;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 30px;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 45px;
 }
 
 .displayPc {
     grid-area: pc;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 30px;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 45px;
 }
 
-.ganar {
-    color: green;
+.reintentar {
+    margin-top: 45px;
+    font-size: 15px;
+    padding: 15px;
 }
 
-.perder {
-    color: red;
+.hidden {
+    display: none;
 }
